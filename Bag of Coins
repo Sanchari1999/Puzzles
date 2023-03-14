@@ -1,0 +1,18 @@
+QUESTION:
+You are given 10 bags, where each bag containing 1000 coins. 
+However, one of the bags contains forgeries. 
+All the coins are identical in every aspect except that the forged coins weigh 1.1 gram while the real coins weigh 1 gram. 
+What is the minimum number of times you need to weigh the bags to figure out the bag with the forged coins?
+
+ANSWER:
+We are allowed to weigh the bags only once to figure out the forged bags.
+Let us number the bags, from bag 1 to bag 10.
+Now from bag 1, we take 1 coin, and from bag 2 we take 2 coins, from bag 3 we take 3 coins, and so on.
+Now we take all these coins and weigh them together.
+Between all the 10 bags we will have 55 coins.
+Now we know that the real coins all weigh 1 gram while the forged coins weigh 1.1 gram or have an extra 0.1 gram of weight.
+Therefore by observing the extra weight in our picked coins, we can figure out the forged bag.
+Say the weight of the collective coins comes as 55.5 grams. Then we can say that there is an additional 0.5-gram weight, which is 
+0.1×5
+0.1×5, therefore bag 5 from where we took 5 coins is the forged bag.
+Similarly, if the weight was 55.7, then it would be bag 7. To sum it up, if the weight is 55, then the bag numbered n is the bag with the forgeries.
