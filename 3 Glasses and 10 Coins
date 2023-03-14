@@ -1,0 +1,10 @@
+QUESTION: 
+Suppose we have 3 glasses and 10 coins. 
+The problem is to place odd number of coins in each glass i.e. each glass should contain coins and the number of coins in each glass must be odd and total coins which will be used must be equal to 10.
+
+SOLUTION:
+It is not possible to use all 10 coins with each glass having odd number of coins. 
+Therefore, we must think out of box. 
+In the 1st glass place 5 coins which is odd, after that in second glass place 2 coins and in the third glass place 3 coins which is odd. 
+Now, place the entire 3rd glass inside 2nd glass. 
+Indirectly, now 2nd glass contains 5 coins which is odd in nature.
