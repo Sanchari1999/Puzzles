@@ -1,0 +1,43 @@
+/*
+You are in a room blind folded. There are 10 coins kept in front of you where 5 are kept heads up and 5 are kept heads down. It is not possible to determine which side is up by touching them.
+
+Task:
+- The task is to separate these coins into two piles of 5 such that both the piles have an equal number of heads up. 
+- You are allowed to flip the coins any number of times.
+*/
+
+SOLUTION:
+
+Step 1: Take the coins and arrange them into two piles with 5 coins each.
+Step 2: Fixing one pile, flip all the coins in the other pile.
+
+Conclusion: The number of heads in both the piles will become equal. It happens because the coins have only two probabilities, they can either have heads or a tail. 
+
+To further simply this:-
+  We know that are the 10 coins: H H H H H T T T T T
+  Now, let us consider the following cases:-
+    
+    CASE 01:
+            Let us consider the coins are divided in two piles in the following order
+            P1:- H T T T T  and  P2:- T H H H H
+            Now if we flip P1, then
+            P1:- T H H H H
+            Therefore, both the piles will have equal no. of heads.
+            
+    CASE 02:
+            Let us consider the coins are divided in the following order
+            P1:- T H T H H and P2:- H T H T T
+            Flip P1, it becomes
+            P1:- H T H T T
+            Therefore both the piles will have an equal no. of heads.
+
+    CASE 03:  
+            Let us consider the coins are divided in the following order
+            P1:- H T H H H and P2:- T T T T H
+            Flip P2 it becomes
+            P2:- H H H H T 
+            Therefore both the piles will have equal no. of heads.
+            
+- What is happening here is that we are fixing the number of heads in one pile whereas in the other pile we are flipping them.
+- The logic here is that the number of heads up and heads down coins is fixed in the beginning. 
+- When we are dividing them into two piles, if one pile gets “x” heads up then the other pile will have “x” tails up and then we flip the other pile. It becomes “x” tails and the heads become tails.
